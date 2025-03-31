@@ -1,0 +1,13 @@
+{
+  "name": "todo-app",
+  "main": "index.js",
+  "scripts": {
+    "server": "node index.js"
+  },
+  "author": "sawadyecma",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}
