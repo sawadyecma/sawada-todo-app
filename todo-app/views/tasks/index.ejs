@@ -4,17 +4,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>タスク一覧</title>
+    <link rel="stylesheet" href="/css/tasklist.css" />
   </head>
   <body>
     <header>
-      <h1>タスク一覧</h1>
-      <button>タグ管理</button>
-      <div>
+      <div class="headerTop">
+        <h1>タスク一覧</h1>
+        <button class="headerBtn">タグ管理</button>
+      </div>
+      <div class="warningArea">
         <p>実施期限が近いタスクがあります！</p>
       </div>
     </header>
     <main>
-      <input type="search" />
+      <input type="search" placeholder="タスク名で検索..." />
       <div>
         <input type="checkbox" />
         <div class="taskItemCenter">
