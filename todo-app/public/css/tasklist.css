@@ -1,0 +1,29 @@
+header {
+  width: 670px;
+  margin: 0 15px;
+}
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerBtn {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.warningArea {
+  background-color: #fff7d4;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  border-radius: 5px;
+  border: 1px solid #fde583;
+}
