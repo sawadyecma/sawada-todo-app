@@ -20,14 +20,17 @@
     <main>
       <input type="search" placeholder="タスク名で検索..." />
       <div class="taskItems">
+        <% for (i = 0; i < tasks.length; i++) { %>
         <div class="taskItem">
           <div class="taskItemLeft">
             <input type="checkbox" />
           </div>
           <div class="taskItemContent">
             <div class="taskItemCenter">
-              <h3>タスクA</h3>
+              <h3><%= tasks[i].title %></h3>
+              <!-- <p>実施期限：<%= tasks[i].due_date %></p> -->
               <p>実施期限：2024年4月30日</p>
+
               <span class="category">仕事</span>
               <span class="category">重要</span>
             </div>
@@ -38,6 +41,7 @@
             </div>
           </div>
         </div>
+        <% } %>
       </div>
     </main>
   </body>
