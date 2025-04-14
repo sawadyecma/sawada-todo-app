@@ -31,9 +31,12 @@ app.get("/", (req, res) => {
 app.get("/tasks", (req, res) => {
   connection.query("SELECT * FROM tasks", (err, results) => {
     console.log({ err });
-    console.table(results);
+    // console.log(results);
+    for (i = 0; i < results.length; i++) {
+      console.log(results[i].title);
+    }
+    res.render("./tasks/index.ejs", { tasks: results });
   });
-  res.render("./tasks/index.ejs", {});
 });
 
 app.listen(port, () => {
