@@ -1,5 +1,8 @@
 body {
   max-width: 670px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #212529;
 }
 header {
   padding: 16px;
@@ -54,4 +57,11 @@ main {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+.category {
+  border: 1px solid #6c757d;
+  border-radius: 5px;
+  padding: 1.6px;
+  background-color: #edeff1;
 }
