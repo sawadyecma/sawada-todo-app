@@ -1,0 +1,61 @@
+name: Task
+description: タスク管理用のIssueテンプレート
+title: "[Task]: "
+labels: ["task"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📌 タスクを明確にしましょう
+        このIssueで対応するタスク内容を具体的に記入してください。
+
+  - type: input
+    id: task_summary
+    attributes:
+      label: タスク概要
+      description: 簡潔にタスクの概要を記入してください。
+      placeholder: "例: ログイン画面のデザインを調整する"
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: 詳細説明
+      description: タスクの詳細、関連情報、特記事項があれば記入してください。
+      placeholder: "タスクの詳細を記入してください"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 優先度
+      description: タスクの優先度を選択してください。
+      options:
+        - 高
+        - 中
+        - 低
+    validations:
+      required: true
+
+  - type: input
+    id: due_date
+    attributes:
+      label: 期限
+      description: タスクの期限があれば記入してください (YYYY/MM/DD形式)。
+      placeholder: "例: 2025/05/31"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: チェックリスト（任意）
+      description: タスクを細かく分解してチェックリストを作成できます。
+      options:
+        - label: 作業1
+        - label: 作業2
+        - label: 作業3
