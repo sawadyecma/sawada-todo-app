@@ -16,8 +16,16 @@ git switch -c ブランチ名
 ```sh
 git add 修正したファイルのパス
 
+
 # example
+# ファイルを指定したい場合以下の感じ
 # git add views/tasks/index.ejs
+#
+# まとめて指定したい場合には以下。今いる場所より深いフォルダが全部追加される。
+# git add .
+
+# 以下のコマンドでstagingになったか確認できます。緑色になってればOK
+git status
 ```
 
 3. staging に入れたファイル達を commit します

@@ -39,6 +39,10 @@ app.get("/tasks", (req, res) => {
   });
 });
 
+app.get("/tasks/new", (req, res) => {
+  res.render("./tasks/new.ejs");
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
