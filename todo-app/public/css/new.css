@@ -11,3 +11,13 @@ main {
 main h1 {
   font-size: 36px;
 }
+
+button {
+  background-color: #0d6efd;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin-top: 8px;
+}
